@@ -59,7 +59,7 @@ describe('FixtureService', () => {
                     })));
                 });
 
-                fixtureService.fetch().subscribe(
+                fixtureService.fetchList().subscribe(
                     (fixtures) => {
                         expect(fixtures.length).toBe(2);
 

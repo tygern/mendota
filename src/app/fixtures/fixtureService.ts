@@ -12,7 +12,7 @@ export class FixtureService implements FixtureProvider {
     constructor(private _http:Http) {
     }
 
-    fetch():Observable<Fixture[]> {
+    fetchList():Observable<Fixture[]> {
         let headers = new Headers({'X-Auth-Token': 'b61179888f4547ddb9b5fa62d2ed4700'});
 
         return this._http.get(

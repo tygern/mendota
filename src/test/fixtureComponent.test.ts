@@ -16,7 +16,7 @@ describe('FixtureService', () => {
             this.subject = Subject.create();
         }
 
-        fetch():Observable<Fixture[]> {
+        fetchList():Observable<Fixture[]> {
             return this.subject.asObservable();
         }
 

@@ -29,7 +29,7 @@ export class FixturesComponent {
 
     constructor(@Inject(FixtureService) private fixtureProvider:FixtureProvider) {
         
-        fixtureProvider.fetch().subscribe((fixtures) => {
+        fixtureProvider.fetchList().subscribe((fixtures) => {
             this.fixtureList = fixtures;
         });
     }
