@@ -9,15 +9,15 @@ import {Fixture} from "./fixture";
             <thead>
                 <tr>
                     <th>Home</th>
-                    <th>result</th>
+                    <th></th>
                     <th>Away</th>
                 </tr>
             </thead>  
             <tbody>
                 <tr *ngFor="#fixture of fixtureList">
-                    <th>{{fixture.homeTeam.name}}</th>
-                    <th>{{fixture.homeGoals}} - {{fixture.awayGoals}}</th>
-                    <th>{{fixture.awayTeam.name}}</th>
+                    <td>{{fixture.homeTeam.name}}</td>
+                    <td>{{fixture.homeGoals}} - {{fixture.awayGoals}}</td>
+                    <td>{{fixture.awayTeam.name}}</td>
                 </tr>
             </tbody>                  
         </table>

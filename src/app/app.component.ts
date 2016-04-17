@@ -7,16 +7,15 @@ import {FixturesComponent} from "./fixtures/fixturesComponent";
     selector: 'mendota',
 
     template: `
-        <h1>Welcome</h1>
+    <div class="container">
         <router-outlet></router-outlet>
+    </div>
     `,
     directives: [ROUTER_DIRECTIVES]
 })
-
 @RouteConfig([
-    {path: '/fixtures', name: 'Fixtures', component: FixturesComponent, useAsDefault: true}
+    {path: '/', name: 'Fixtures', component: FixturesComponent, useAsDefault: true}
 ])
-
 export class AppComponent {
     constructor() {
     }
