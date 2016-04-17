@@ -4,9 +4,10 @@ import {Observable} from "rxjs/Observable";
 import "rxjs/Rx";
 import {Fixture} from "./fixture";
 import {Team} from "./team";
+import {FixtureProvider} from "./fixtureProvider";
 
 @Injectable()
-export class FixtureService {
+export class FixtureService implements FixtureProvider {
 
     constructor(private _http:Http) {
     }
@@ -17,7 +18,7 @@ export class FixtureService {
         return this._http.get(
             "http://api.football-data.org/v1/soccerseasons/398/fixtures?timeFrame=n7",
             {headers}
-        )
+            )
             .map((response) => {
                 return response.json().fixtures.map((fixture) => {
                     let homeTeam = new Team(fixture.homeTeamName);

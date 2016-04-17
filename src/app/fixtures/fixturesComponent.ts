@@ -1,6 +1,7 @@
-import {Component} from 'angular2/core';
-import {FixtureService} from "./fixtureService";
+import {Component, Inject} from 'angular2/core';
 import {Fixture} from "./fixture";
+import {FixtureProvider} from "./fixtureProvider";
+import {FixtureService} from "./fixtureService";
 
 @Component({
     selector: 'fixtureList',
@@ -26,8 +27,9 @@ import {Fixture} from "./fixture";
 export class FixturesComponent {
     public fixtureList:Fixture[] = [];
 
-    constructor(private fixtureService:FixtureService) {
-        fixtureService.fetch().subscribe((fixtures) => {
+    constructor(@Inject(FixtureService) private fixtureProvider:FixtureProvider) {
+        
+        fixtureProvider.fetch().subscribe((fixtures) => {
             this.fixtureList = fixtures;
         });
     }
