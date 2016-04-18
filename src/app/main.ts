@@ -6,6 +6,10 @@ import {ROUTER_PROVIDERS} from "angular2/router";
 import 'rxjs/Rx'
 
 import {AppComponent} from "./app.component";
-import {FixtureService} from "./fixtures/fixtureService";
+import {SERVICE_PROVIDERS} from "./app.configuration";
 
-bootstrap(AppComponent, [FixtureService, HTTP_PROVIDERS, ROUTER_PROVIDERS]);
+bootstrap(AppComponent, [
+    SERVICE_PROVIDERS,
+    HTTP_PROVIDERS,
+    ROUTER_PROVIDERS
+]);
