@@ -13,6 +13,7 @@
     "lib": "mkdir -p build/lib && node copy-libs.js",
     "html": "cp src/index.html build/",
     "images": "mkdir -p build/images && cp -r src/images/. build/images",
+    "deploy": "git subtree push --prefix build origin gh-pages",
 
     "css": "./node_modules/.bin/node-sass      -r --output build/styles/ --source-map=true src/styles/",
     "css:w": "./node_modules/.bin/node-sass -w -r --output build/styles/ --source-map=true src/styles/",
