@@ -1,4 +1,4 @@
-import {safeProvide} from "angular2-safe-provider"
+import {safeProvide} from "safe-provide"
 
 import {FixtureService} from "./fixtures/fixtureService";
 import {FixtureProviderToken, FixtureProvider} from "./fixtures/fixtureProvider";
