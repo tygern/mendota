@@ -9,7 +9,7 @@ var files = {
     "angular2": "node_modules/angular2/bundles/angular2.dev.js",
     "angular2-http": "node_modules/angular2/bundles/http.dev.js",
     "angular2-router": "node_modules/angular2/bundles/router.dev.js",
-    "angular2-safe-provider": "node_modules/angular2-safe-provider/build/index.js"
+    "safe-provide": "node_modules/safe-provide/build/index.js"
 };
 
 try {

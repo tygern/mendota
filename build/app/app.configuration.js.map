@@ -1,1 +1,1 @@
-{"version":3,"file":"app.configuration.js","sourceRoot":"","sources":["../../src/app/app.configuration.ts"],"names":[],"mappings":";;QAKa,2BAA2B;;;;;;;;;;;;;YAA3B,yCAAA,2BAA2B,GAAG;gBACvC,qCAAY,CAAkB,sCAAoB,CAAC,CAAiB,+BAAc,CAAC;aACtF,CAAA,CAAC"}
+{"version":3,"file":"app.configuration.js","sourceRoot":"","sources":["../../src/app/app.configuration.ts"],"names":[],"mappings":";;QAKa,2BAA2B;;;;;;;;;;;;;YAA3B,yCAAA,2BAA2B,GAAG;gBACvC,0BAAW,CAAkB,sCAAoB,CAAC,CAAC,+BAAc,CAAC;aACrE,CAAA,CAAC"}
