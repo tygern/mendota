@@ -14,7 +14,7 @@ System.register(["safe-provide", "./fixtures/fixtureService", "./fixtures/fixtur
             }],
         execute: function() {
             exports_1("SINGLETON_SERVICE_PROVIDERS", SINGLETON_SERVICE_PROVIDERS = [
-                safe_provide_1.safeProvide(fixtureProvider_1.FixtureProviderToken)(fixtureService_1.FixtureService)
+                safe_provide_1.safeProvide(fixtureProvider_1.FixtureProviderToken).useClass(fixtureService_1.FixtureService)
             ]);
         }
     }
