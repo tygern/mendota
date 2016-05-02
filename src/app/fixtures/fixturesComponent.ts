@@ -1,6 +1,8 @@
 import {Component, Inject} from 'angular2/core';
+
 import {Fixture} from "./fixture";
-import {FixtureProvider, FixtureProviderToken} from "./fixtureProvider";
+import {FixtureProvider} from "./fixtureProvider";
+import {FixtureProviderToken} from "../app.configuration";
 
 @Component({
     selector: 'fixtureList',

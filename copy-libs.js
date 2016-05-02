@@ -15,7 +15,7 @@ var files = {
 try {
     Object.keys(files).forEach(function(key) {
         var val = files[key];
-        fs.copySync(val, 'build/' + key + '/index.js')
+        fs.copySync(val, 'build/lib/' + key + '/index.js')
     });
 } catch (err) {
     console.error(err)

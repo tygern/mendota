@@ -31,12 +31,20 @@ var pathsMapping = function (path) {
         }, {});
 };
 
+
+var libPaths = pathsMapping('/base/build/lib/');
+
 /**
  * Setup SystemJS to correctly
  * locate user modules served by Karma.
  */
 System.config({
     packages: {
+        "safe-provide": {
+            main: '..' + libPaths['./safe-provide/index'],
+            defaultExtension: 'js',
+            format: 'cjs'
+        },
         '/base/build/app/': {
             defaultExtension: "js",
             format: 'register',
@@ -45,7 +53,7 @@ System.config({
         '/base/build/lib/': {
             defaultExtension: "js",
             format: 'register',
-            map: pathsMapping('/base/build/lib/')
+            map: libPaths
         }
     }
 });

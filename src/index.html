@@ -9,20 +9,23 @@
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
-    <script src="es6/index.js"></script>
-    <script src="systemjs-polyfills/index.js"></script>
-    <script src="angular2-polyfills/index.js"></script>
-    <script src="systemjs/index.js"></script>
-    <script src="rxjs/index.js"></script>
-    <script src="angular2/index.js"></script>
-    <script src="angular2-http/index.js"></script>
-    <script src="angular2-router/index.js"></script>
+    <script src="lib/es6/index.js"></script>
+    <script src="lib/systemjs-polyfills/index.js"></script>
+    <script src="lib/angular2-polyfills/index.js"></script>
+    <script src="lib/systemjs/index.js"></script>
+    <script src="lib/rxjs/index.js"></script>
+    <script src="lib/angular2/index.js"></script>
+    <script src="lib/angular2-http/index.js"></script>
+    <script src="lib/angular2-router/index.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
         System.config({
+            map: {
+                'safe-provide': 'lib/safe-provide'
+            },
             packages: {
-                "safe-provide": {
+                "lib/safe-provide": {
                     main: 'index.js',
                     defaultExtension: 'js',
                     format: 'cjs'
